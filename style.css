@@ -1,30 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #ffc600;
+  /* background: #ffc600; */
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
   box-sizing: inherit;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Amatic SC', cursive;
-  text-align: center;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Amatic SC", cursive; */
+  /* text-align: center; */
 }
 
 h1 {
-  text-align: center;
+  /* text-align: center; */
   font-size: 10rem;
   line-height: 1;
   margin-bottom: 0;
 }
 
+.h\:85 {
+  height: 85vh;
+}
+.game-score {
+  text-align: center;
+}
+/* .game-score h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2;
+}
+.game-score h2 span {
+  font-size: 5rem;
+  font-weight: 700;
+} */
+.start__btn {
+  border: 0;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.back__home {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #1f2122;
+  font-weight: 700;
+}
 .score {
-  background: rgba(255,255,255,0.2);
-  padding: 0 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  /* padding: 0 3rem; */
   line-height: 1;
   border-radius: 1rem;
 }
@@ -40,6 +76,8 @@ h1 {
 .hole {
   flex: 1 0 33.33%;
   overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -47,24 +85,89 @@ h1 {
   display: block;
   background: url(dirt.svg) bottom center no-repeat;
   background-size: contain;
-  content: '';
+  content: "";
   width: 100%;
-  height:70px;
+  height: 70px;
   position: absolute;
-  z-index: 2;
   bottom: -30px;
+  /* z-index: 2; */
 }
 
 .mole {
-  background: url('mole.svg') bottom center no-repeat;
+  background: url("mole.svg") bottom center no-repeat;
   background-size: 60%;
   position: absolute;
-  top: 100%;
+  top: 90%;
+  /* z-index: -1; */
   width: 100%;
   height: 100%;
-  transition:all 0.4s;
+  transition: all 0.4s;
 }
 
 .hole.up .mole {
   top: 0;
+}
+
+.container {
+  max-width: 95rem;
+  margin: 0 auto;
+}
+
+header {
+  padding: 2rem 0;
+  border-bottom: 1px solid #a7a7a7;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 4rem;
+}
+.nav {
+  width: 2.5rem;
+}
+
+.hero__content {
+  text-align: left;
+  max-width: 70ch;
+}
+.hero__content h1 {
+  font-size: 5rem;
+  line-height: 1;
+}
+.hero__content p {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.hero__content a {
+  font-weight: 700;
+  color: #1f2122;
+  background-color: #ffc600;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.2rem 3rem;
+  display: inline-block;
+}
+
+.hero__img img {
+  max-width: 100%;
+}
+.gameEndIn {
+  margin: 1rem 0;
+}
+
+.board {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+  width: 30rem;
+  border: 1px solid rgb(38, 46, 49);
+  box-shadow: 1px 1px 0 rgb(255 255 255 / 20%);
+  margin: 0 auto;
 }

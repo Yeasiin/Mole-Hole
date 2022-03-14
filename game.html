@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Mole Hole</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-score"></div>
+
+    <div class="game">
+      <div class="hole hole1">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole2">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole3">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole4">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole5">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole6">
+        <div class="mole"></div>
+      </div>
+    </div>
+
+    <a class="back__home" href="/">◀ Back to Home</a>
+    <button class="start__btn" onClick="startGame()">Start!</button>
+    <div class="board">
+      <div class="d-flex">
+        <h2>Score : <span class="score">0</span></h2>
+
+        <h3>Time Left: <span class="gameEndIn"></span></h3>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
